@@ -1,0 +1,44 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="shadowGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#4C1D95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#shadowGrad)"/>
+  
+  <!-- Dark forest silhouettes -->
+  <polygon points="0,180 50,120 100,160 150,100 200,140 250,110 300,150 350,120 400,160 400,300 0,300" fill="#1E293B" opacity="0.9"/>
+  
+  <!-- Mysterious fog -->
+  <ellipse cx="100" cy="200" rx="80" ry="20" fill="#64748B" opacity="0.3"/>
+  <ellipse cx="300" cy="190" rx="60" ry="15" fill="#64748B" opacity="0.4"/>
+  
+  <!-- Glowing eyes in darkness -->
+  <circle cx="120" cy="140" r="3" fill="#EF4444" filter="url(#glow)"/>
+  <circle cx="130" cy="142" r="3" fill="#EF4444" filter="url(#glow)"/>
+  
+  <!-- Shadow figure -->
+  <path d="M200 120 Q210 100 220 120 L225 180 Q220 190 210 185 Q200 190 190 185 Q185 180 190 120 Q195 100 200 120" fill="#000" opacity="0.8"/>
+  
+  <!-- Moonlight -->
+  <circle cx="350" cy="50" r="25" fill="#F1F5F9" opacity="0.8"/>
+  <circle cx="350" cy="50" r="30" fill="none" stroke="#F1F5F9" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Twisted branches -->
+  <path d="M50 120 Q70 110 80 130 Q90 140 100 125" stroke="#374151" stroke-width="3" fill="none"/>
+  <path d="M300 110 Q320 100 330 120 Q340 130 350 115" stroke="#374151" stroke-width="3" fill="none"/>
+  
+  <!-- Title overlay -->
+  <rect x="0" y="220" width="400" height="80" fill="rgba(0,0,0,0.8)"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFF" text-anchor="middle">Shadow Chronicles</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="14" fill="#A855F7" text-anchor="middle">Dark Fantasy Horror</text>
+</svg>

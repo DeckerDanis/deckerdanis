@@ -1,0 +1,29 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="mysticGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E293B;stop-opacity:1" />
+    </radialGradient>
+    <pattern id="stars" patternUnits="userSpaceOnUse" width="50" height="50">
+      <circle cx="10" cy="10" r="1" fill="#FFF" opacity="0.8"/>
+      <circle cx="30" cy="25" r="0.5" fill="#FFF" opacity="0.6"/>
+      <circle cx="45" cy="15" r="0.8" fill="#FFF" opacity="0.7"/>
+    </pattern>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#mysticGrad)"/>
+  <rect width="100%" height="100%" fill="url(#stars)" opacity="0.3"/>
+  
+  <!-- Mystical elements -->
+  <circle cx="200" cy="150" r="80" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.6"/>
+  <circle cx="200" cy="150" r="60" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Crystal formations -->
+  <polygon points="150,100 170,80 190,100 170,120" fill="#06B6D4" opacity="0.7"/>
+  <polygon points="210,200 230,180 250,200 230,220" fill="#8B5CF6" opacity="0.7"/>
+  
+  <!-- Title overlay -->
+  <rect x="0" y="220" width="400" height="80" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFF" text-anchor="middle">Mystic Realms</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="14" fill="#A78BFA" text-anchor="middle">Fantasy RPG Adventure</text>
+</svg>

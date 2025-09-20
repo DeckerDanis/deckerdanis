@@ -1,0 +1,55 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="spaceGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0C0A09;stop-opacity:1" />
+    </radialGradient>
+    <pattern id="starField" patternUnits="userSpaceOnUse" width="40" height="40">
+      <circle cx="5" cy="8" r="0.5" fill="#FFF" opacity="0.9"/>
+      <circle cx="20" cy="15" r="0.3" fill="#FFF" opacity="0.7"/>
+      <circle cx="35" cy="25" r="0.4" fill="#FFF" opacity="0.8"/>
+      <circle cx="15" cy="30" r="0.2" fill="#FFF" opacity="0.6"/>
+      <circle cx="30" cy="5" r="0.6" fill="#FFF" opacity="0.9"/>
+    </pattern>
+    <filter id="starGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="url(#spaceGrad)"/>
+  <rect width="100%" height="100%" fill="url(#starField)" opacity="0.8"/>
+  
+  <!-- Nebula clouds -->
+  <ellipse cx="150" cy="100" rx="60" ry="30" fill="#7C3AED" opacity="0.4"/>
+  <ellipse cx="280" cy="180" rx="40" ry="20" fill="#06B6D4" opacity="0.3"/>
+  
+  <!-- Planets -->
+  <circle cx="320" cy="80" r="15" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="320" cy="80" r="18" fill="none" stroke="#F59E0B" stroke-width="1" opacity="0.4"/>
+  
+  <circle cx="80" cy="200" r="20" fill="#10B981" opacity="0.7"/>
+  <ellipse cx="80" cy="195" rx="25" ry="3" fill="#10B981" opacity="0.3"/>
+  
+  <!-- Spaceship -->
+  <path d="M180 140 L220 150 L240 145 L245 150 L240 155 L220 160 L180 150 Z" fill="#E5E7EB"/>
+  <path d="M180 140 L200 135 L220 140 L200 145 Z" fill="#F3F4F6"/>
+  <circle cx="185" cy="145" r="2" fill="#06B6D4" filter="url(#starGlow)"/>
+  <circle cx="190" cy="147" r="1.5" fill="#06B6D4" filter="url(#starGlow)"/>
+  
+  <!-- Engine trail -->
+  <path d="M180 140 Q160 145 140 150 Q160 150 180 150" fill="#06B6D4" opacity="0.6"/>
+  <path d="M180 142 Q165 145 150 147 Q165 148 180 148" fill="#FFF" opacity="0.8"/>
+  
+  <!-- Bright star -->
+  <circle cx="350" cy="50" r="3" fill="#FFF" filter="url(#starGlow)"/>
+  <path d="M350 40 L350 60 M340 50 L360 50" stroke="#FFF" stroke-width="1" opacity="0.8"/>
+  
+  <!-- Title overlay -->
+  <rect x="0" y="220" width="400" height="80" fill="rgba(0,0,0,0.7)"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FFF" text-anchor="middle">Stellar Odyssey</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="14" fill="#60A5FA" text-anchor="middle">Space Exploration RPG</text>
+</svg>
