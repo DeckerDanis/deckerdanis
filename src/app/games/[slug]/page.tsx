@@ -19,9 +19,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
+// Generate metadata for SEO
 export async function generateMetadata({ params }: GamePageProps): Promise<Metadata> {
-  const resolvedParams = await params;
-  const game = getGameBySlug(resolvedParams.slug);
+  const game = getGameBySlug(params.slug);
   
   if (!game) {
     return {
@@ -54,9 +54,8 @@ export async function generateMetadata({ params }: GamePageProps): Promise<Metad
   };
 }
 
-export default async function GamePage({ params }: GamePageProps) {
-  const resolvedParams = await params;
-  const game = getGameBySlug(resolvedParams.slug);
+export default function GamePage({ params }: GamePageProps) {
+  const game = getGameBySlug(params.slug);
 
   if (!game) {
     notFound();
