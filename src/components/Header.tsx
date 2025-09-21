@@ -50,9 +50,6 @@ const Header = () => {
     alt="DeckDanis Logo"
     className="rounded-lg" // 필요한 경우 기존 rounded-lg 스타일 적용
   />
-  <span className="text-white font-bold text-xl font-orbitron">
-    AWAKENED GAMES
-  </span>
 </Link>
 
           {/* Desktop Navigation */}
