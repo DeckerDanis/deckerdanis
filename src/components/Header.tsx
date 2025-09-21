@@ -43,14 +43,13 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-  {/* 기존 로고 div 대신 Image 컴포넌트 사용 */}
+         <Link href="/" className="flex items-center">
   <Image
-    src="/logo.png" // public 폴더에 있는 로고 파일 경로
+    src="/logo.png"
     alt="DeckDanis Logo"
-    width={48}
-    height={48}
-    className="rounded-lg" // 필요한 경우 기존 rounded-lg 스타일 적용
+    width={40}  // 사이즈를 40px로 조절했습니다.
+    height={40} // 사이즈를 40px로 조절했습니다.
+    className="rounded-lg"
   />
 </Link>
 
