@@ -48,8 +48,6 @@ const Header = () => {
   <Image
     src="/logo.png" // public 폴더에 있는 로고 파일 경로
     alt="DeckDanis Logo"
-    width={32} // 이미지의 실제 너비 또는 원하는 너비
-    height={32} // 이미지의 실제 높이 또는 원하는 높이
     className="rounded-lg" // 필요한 경우 기존 rounded-lg 스타일 적용
   />
   <span className="text-white font-bold text-xl font-orbitron">
