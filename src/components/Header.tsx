@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -42,15 +43,19 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">R</span>
-            </div>
-            <span className="text-white font-bold text-xl font-orbitron">
-              DeckDanis
-            </span>
-          </Link>
+  {/* 기존 로고 div 대신 Image 컴포넌트 사용 */}
+  <Image
+    src="/logo.png" // public 폴더에 있는 로고 파일 경로
+    alt="DeckDanis Logo"
+    width={32} // 이미지의 실제 너비 또는 원하는 너비
+    height={32} // 이미지의 실제 높이 또는 원하는 높이
+    className="rounded-lg" // 필요한 경우 기존 rounded-lg 스타일 적용
+  />
+  <span className="text-white font-bold text-xl font-orbitron">
+    AWAKENED GAMES
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
