@@ -43,14 +43,16 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-  <Image
-    src="/logo.png"
-    alt="AWAKENED GAMES"
-    width={200}  
-    className="rounded-lg"
-  />
-</Link>
+          {/* --- 이 부분에 flex-shrink-0 클래스를 추가했습니다 --- */}
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <Image
+              src="/logo.png"
+              alt="AWAKENED GAMES"
+              width={200}
+              height={50} 
+              className="rounded-lg"
+            />
+          </Link>
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
