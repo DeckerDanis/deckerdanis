@@ -19,7 +19,6 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-// Generate metadata for SEO
 export async function generateMetadata({ params }: GamePageProps): Promise<Metadata> {
   const game = getGameBySlug(params.slug);
   
