@@ -43,16 +43,14 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-         <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center">
   <Image
     src="/logo.png"
-    alt="DeckDanis Logo"
-    width={40}  // 사이즈를 40px로 조절했습니다.
-    height={40} // 사이즈를 40px로 조절했습니다.
+    alt="AWAKENED GAMES"
+    width={200}  
     className="rounded-lg"
   />
 </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
