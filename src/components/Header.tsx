@@ -48,6 +48,8 @@ const Header = () => {
   <Image
     src="/logo.png" // public 폴더에 있는 로고 파일 경로
     alt="DeckDanis Logo"
+    width={96}
+    height={96}
     className="rounded-lg" // 필요한 경우 기존 rounded-lg 스타일 적용
   />
 </Link>
