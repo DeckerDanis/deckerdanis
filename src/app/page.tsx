@@ -27,11 +27,11 @@ export default function Home() {
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold font-orbitron mb-6">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 animate-gradient-x">
-                DECKER
+                AWAKENED
               </span>
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 animate-gradient-x">
-                DANIS
+                GAMES
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -205,12 +205,12 @@ export default function Home() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold font-orbitron mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
-                  About DeckerDanis
+                  About AWAKENEDGAMES
                 </span>
               </h2>
               <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                 <p>
-                  Founded in 2020, DeckerDanis has quickly become a leading force in the gaming industry, 
+                  Founded in 2020, AWAKENEDGAMES has quickly become a leading force in the gaming industry, 
                   creating immersive experiences that push the boundaries of interactive entertainment.
                 </p>
                 <p>
@@ -279,8 +279,8 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">Email Us</h3>
-                  <p className="text-gray-400">hello@deckerdanis.com</p>
-                  <p className="text-gray-400">support@deckerdanis.com</p>
+                  <p className="text-gray-400">hello@awakenedgames.com</p>
+                  <p className="text-gray-400">support@awakenedgames.com</p>
                 </div>
               </div>
               
